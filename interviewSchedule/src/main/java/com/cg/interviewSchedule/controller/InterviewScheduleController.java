@@ -41,6 +41,8 @@ public class InterviewScheduleController {
 	    	logger.info("start getInterviewById in controller");	    	
 			logger.info("start getInterviewById in controller");
 			logger.info("start getInterviewById in controller");
+				logger.info("start getInterviewById in controller");
+			logger.info("start getInterviewById in controller");
 	    	interviewScheduleService.findInterviewById(interviewId)
 	    	.orElseThrow(() -> new ResourceNotFoundException("Interview not found for this id ::" + interviewId));	    	    
 	        return interviewScheduleService.findInterviewById(interviewId);

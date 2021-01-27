@@ -40,6 +40,7 @@ public class InterviewScheduleController {
 	    public Optional<Interview> getInterviewById(@PathVariable(value= "interviewId") Integer interviewId) throws ResourceNotFoundException {	    
 	    	logger.info("start getInterviewById in controller");	    	
 			logger.info("start getInterviewById in controller");
+			logger.info("start getInterviewById in controller");
 	    	interviewScheduleService.findInterviewById(interviewId)
 	    	.orElseThrow(() -> new ResourceNotFoundException("Interview not found for this id ::" + interviewId));	    	    
 	        return interviewScheduleService.findInterviewById(interviewId);
